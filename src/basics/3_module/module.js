@@ -1,7 +1,7 @@
 import myModule, {
   TheAwserToTheQuestion,
-  someObject
-} from "./exampleModule/myModule";
+  someObject,
+} from "./exempleModule/myModule";
 
 export const exo_1 = () => {
   // please return the expected
@@ -15,10 +15,5 @@ export const exo_2 = () => {
 
 export const exo_3 = () => {
   // please return the expected
-  return someObject.a;
-};
-
-export const exo_4 = () => {
-  // please return the expected
-  return;
+  return someObject;
 };

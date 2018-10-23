@@ -1,4 +1,3 @@
-/*
 import * as exo from "./types";
 
 test("exo_0", () => {
@@ -34,4 +33,3 @@ test("exo_6", () => {
 test("exo_7", () => {
   expect(exo.exo_7()).toEqual({ one: 1, two: 2 })
 });
-*/

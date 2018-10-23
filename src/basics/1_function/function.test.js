@@ -1,4 +1,3 @@
-/*
 import * as exo from "./function";
 
 test("exo_0", () => {
@@ -40,4 +39,3 @@ test("exo_10", () => {
     expect(exo.exo_10()(index)).toBe(result);
   });
 });
-*/

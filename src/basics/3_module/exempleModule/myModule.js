@@ -8,8 +8,6 @@ export function HelloPeople(){
 
 export const TheAwserToTheQuestion = 42;
 
-const someObject = {
+export const someObject = {
   a: 1
 }
-
-export someObject;
