@@ -1,2 +1,0 @@
-# KOANS
-Created with CodeSandbox

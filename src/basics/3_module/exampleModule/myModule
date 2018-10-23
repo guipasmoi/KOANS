@@ -1,0 +1,15 @@
+export default function (a,b) {
+  a*b
+}
+
+export function HelloPeople(){
+  return "hello people"
+}
+
+export const TheAwserToTheQuestion = 42;
+
+const someObject = {
+  a: 1
+}
+
+export someObject;
