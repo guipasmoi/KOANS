@@ -23,13 +23,17 @@ test("exo_4", () => {
 });
 
 test("exo_5", () => {
-  expect(exo.exo_5()).toBe(null);
+  expect(exo.exo_5()).toBe(714);
 });
 
 test("exo_6", () => {
-  expect(exo.exo_6()).toBe(714)
+  expect(exo.exo_6()).toBe(3.14)
 });
 
 test("exo_7", () => {
   expect(exo.exo_7()).toEqual({ one: 1, two: 2 })
+});
+
+test("exo_8", () => {
+    expect(exo.exo_8()).toEqual({ "hard-rock" : "AC-DC" })
 });

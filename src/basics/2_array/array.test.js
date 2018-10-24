@@ -31,6 +31,4 @@ test("exo_2 don t cheat, use the array in parameter", () => {
 test("exo_3 concat array", () => {
     const result = exo.exo_3(vegetables, fruits);
     expect(result).toEqual(vegetables.concat(fruits));
-})
-})
-;
+});
