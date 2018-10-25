@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`exo1 1`] = `
+Array [
+  Object {
+    "id": 70111470,
+    "title": "Die Hard",
+  },
+  Object {
+    "id": 654356453,
+    "title": "Bad Boys",
+  },
+  Object {
+    "id": 65432445,
+    "title": "The Chamber",
+  },
+  Object {
+    "id": 675465,
+    "title": "Fracture",
+  },
+]
+`;
+
+exports[`exo2 1`] = `
+Array [
+  2,
+  3,
+  4,
+]
+`;
+
+exports[`exo3 1`] = `
+Array [
+  Object {
+    "id": 70111470,
+    "title": "Die Hard",
+  },
+  Object {
+    "id": 654356453,
+    "title": "Bad Boys",
+  },
+  Object {
+    "id": 65432445,
+    "title": "The Chamber",
+  },
+  Object {
+    "id": 675465,
+    "title": "Fracture",
+  },
+]
+`;
+
+exports[`exo4 1`] = `
+Array [
+  2,
+  3,
+  4,
+]
+`;
+
+exports[`exo5 1`] = `
+Array [
+  Object {
+    "id": 70111470,
+    "title": "Die Hard",
+  },
+  Object {
+    "id": 654356453,
+    "title": "Bad Boys",
+  },
+  Object {
+    "id": 65432445,
+    "title": "The Chamber",
+  },
+  Object {
+    "id": 675465,
+    "title": "Fracture",
+  },
+]
+`;
+
+exports[`exo6 1`] = `
+Array [
+  Object {
+    "bookmark": Array [
+      Object {
+        "id": 432534,
+        "time": 65876586,
+      },
+    ],
+    "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+    "id": 654356453,
+    "rating": 5,
+    "title": "Bad Boys",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+  },
+  Object {
+    "bookmark": Array [
+      Object {
+        "id": 432534,
+        "time": 65876586,
+      },
+    ],
+    "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+    "id": 675465,
+    "rating": 5,
+    "title": "Fracture",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+  },
+]
+`;
+
+exports[`exo7 1`] = `
+Array [
+  3,
+]
+`;
+
+exports[`exo8 1`] = `
+Array [
+  654356453,
+  675465,
+]
+`;
+
+exports[`exo9 1`] = `
+Array [
+  70111470,
+  654356453,
+  65432445,
+  675465,
+]
+`;
+
+exports[`exo10 1`] = `
+Array [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+]
+`;
+
+exports[`exo11 1`] = `
+Array [
+  70111470,
+  654356453,
+  65432445,
+  675465,
+]
+`;
