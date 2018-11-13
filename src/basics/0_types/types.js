@@ -39,7 +39,6 @@ export const exo_7 = () => {
 };
 
 export const exo_8 = () => {
-    // please return the expected
-    return { "hard-rock" : "AC-DC" };
+  // please return the expected
+  return { "hard-rock": "AC-DC" };
 };
-

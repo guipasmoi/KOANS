@@ -1,6 +1,6 @@
 import myModule, {
   TheAwserToTheQuestion,
-  someObject,
+  someObject
 } from "./exempleModule/myModule";
 
 export const exo_1 = () => {
