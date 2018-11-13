@@ -4,7 +4,7 @@ import myModule, {
   someObject
 } from "./exempleModule/myModule";
 
-import myModuleToComplete, {toto}  from "./exempleModule/myModuleToComplete"
+import myModuleToComplete, { toto } from "./exempleModule/myModuleToComplete";
 
 test("exo_1 return default myModule.js from the folder of exmapleModule", () => {
   const result = exo.exo_1();
@@ -22,9 +22,9 @@ test("exo_3 return SomeObject myModule.js from the folder of exempleModule", () 
 });
 
 test("exo_4 modify myModuleToComplete", () => {
-    expect(myModuleToComplete).toBe("Joke");
+  expect(myModuleToComplete).toBe("Joke");
 });
 
-test("exo_5 modify myModuleToComplete to add a named export \"toto\"", () => {
-    expect(toto).toBe(2);
+test('exo_5 modify myModuleToComplete to add a named export "toto"', () => {
+  expect(toto).toBe(2);
 });
