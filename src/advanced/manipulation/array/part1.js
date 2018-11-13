@@ -56,9 +56,7 @@ export function exo1() {
   // Use forEach function to accumulate {id, title} pairs from each video.
   // Put the results into the videoAndTitlePairs array using the Array's
   // push() method. Example: videoAndTitlePairs.push(newItem);
-  newReleases.forEach(video => {
-    videoAndTitlePairs.push({ id: video.id, title: video.title });
-  });
+
   // ------------ INSERT CODE HERE! -----------------------------------
 
   return videoAndTitlePairs;
@@ -72,7 +70,7 @@ export function exo2() {
       // Apply the projectionFunction to each item in the array and add
       // each result to the results array.
       // Note: you can add items to an array with the push() method.
-      results.push(projectionFunction(itemInArray));
+
       // ------------ INSERT CODE HERE! ----------------------------
     });
 
@@ -121,9 +119,7 @@ export function exo3() {
   // Use forEach function to accumulate {id, title} pairs from each video.
   // Put the results into the videoAndTitlePairs array using the Array's
   // push() method. Example: videoAndTitlePairs.push(newItem);
-  newReleases.forEach(video => {
-    videoAndTitlePairs.push({ id: video.id, title: video.title });
-  });
+
   // ------------ INSERT CODE HERE! -----------------------------------
 
   return videoAndTitlePairs;
@@ -137,7 +133,7 @@ export function exo4() {
       // Apply the projectionFunction to each item in the array and add
       // each result to the results array.
       // Note: you can add items to an array with the push() method.
-      results.push(projectionFunction(itemInArray));
+
       // ------------ INSERT CODE HERE! ----------------------------
     });
 
@@ -228,11 +224,7 @@ export function exo6() {
 
   // ------------ INSERT CODE HERE! -----------------------------------
   // Use forEach function to accumulate every video with a rating of 5.0
-  newReleases.forEach(function(video) {
-    if (video.rating === 5.0) {
-      videos.push(video);
-    }
-  });
+
   // ------------ INSERT CODE HERE! -----------------------------------
 
   return videos;
@@ -247,9 +239,7 @@ export function exo7() {
       // If the result is truthy, add the item to the results array.
       // Note: remember you can add items to the array using the array's
       // push() method.
-      if (predicateFunction(itemInArray)) {
-        results.push(itemInArray);
-      }
+
       // ------------ INSERT CODE HERE! ----------------------------
     });
 
@@ -300,9 +290,7 @@ export function exo8() {
   // with a rating of 5.0.
 
   //return newReleases; // Complete this expression
-  return newReleases
-    .filter(video => video.rating === 5.0)
-    .map(video => video.id);
+
   // ------------ INSERT CODE HERE! -----------------------------------
 }
 
@@ -356,11 +344,7 @@ export function exo9() {
   // ------------   INSERT CODE HERE!  -----------------------------------
   // Use two nested forEach loops to flatten the movieLists into a list of
   // video ids.
-  movieLists.forEach(movieList => {
-    movieList.videos.forEach(video => {
-      allVideoIdsInMovieLists.push(video.id);
-    });
-  });
+
   // ------------   INSERT CODE HERE!  -----------------------------------
 
   return allVideoIdsInMovieLists;
@@ -372,7 +356,7 @@ export function exo10() {
     this.forEach(subArray => {
       // ------------ INSERT CODE HERE! ----------------------------
       // Add all the items in each subArray to the results array.
-      results = results.concat(subArray);
+
       // ------------ INSERT CODE HERE! ----------------------------
     });
 
@@ -432,8 +416,6 @@ export function exo11() {
   // ------------   INSERT CODE HERE!  -----------------------------------
   // Use map and concatAll to flatten the movieLists in a list of video ids.
   //  return movieLists; // Complete this expression!
-  return movieLists
-    .map(movieList => movieList.videos.map(video => video.id))
-    .concatAll();
+
   // ------------   INSERT CODE HERE!  -----------------------------------
 }

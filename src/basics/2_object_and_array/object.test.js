@@ -4,7 +4,7 @@ describe("About Objects", function() {
       team: "burton",
       members: ["me", "others"]
     };
-    expect(typeof JSONExample).toBe("object");
+    expect(typeof JSONExample).toBe("TODO REPLACEME");
   });
   it("You can access/assign property using `.` or '[somevalue]'", () => {
     const JSONExample = {
@@ -12,11 +12,11 @@ describe("About Objects", function() {
       members: ["me", "others"],
       " tricky property ": 42
     };
-    expect(JSONExample.team).toBe("burton");
-    expect(JSONExample.members[0]).toBe("me");
-    expect(JSONExample.members[1]).toBe("others");
-    expect(JSONExample.members[1]).toBe("others");
-    const assignMe0 = " tricky property ";
+    expect(JSONExample.team).toBe("TODO REPLACEME");
+    expect(JSONExample.members[0]).toBe("TODO REPLACEME");
+    expect(JSONExample.members[1]).toBe("TODO REPLACEME");
+    expect(JSONExample.members[1]).toBe("TODO REPLACEME");
+    const assignMe0 = "TODO REPLACEME";
     expect(JSONExample[assignMe0]).toBe(42);
   });
   it("Array are just special object", () => {
@@ -26,10 +26,10 @@ describe("About Objects", function() {
       members: ["me", "others"],
       " tricky property ": 42
     };
-    expect(typeof JSONArray).toBe("object");
-    expect(JSONArray[0]).toBe(1);
-    expect(JSONArray[1]).toBe(2);
-    expect(Array.isArray(JSONArray)).toBe(true);
-    expect(Array.isArray(JSONExample)).toBe(false);
+    expect(typeof JSONArray).toBe("TODO REPLACEME");
+    expect(JSONArray[0]).toBe("TODO REPLACEME");
+    expect(JSONArray[1]).toBe("TODO REPLACEME");
+    expect(Array.isArray(JSONArray)).toBe("TODO REPLACEME");
+    expect(Array.isArray(JSONExample)).toBe("TODO REPLACEME");
   });
 });

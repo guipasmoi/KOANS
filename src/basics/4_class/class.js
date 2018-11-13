@@ -1,18 +1,10 @@
-class Dog {
-  constructor(name) {
-    this.name = name;
-  }
-  bark() {
-    return "Woof";
-  }
-}
+// create class here
 
 export const exo_1 = () => {
   // please return the expected
-  return Dog;
+  return ;
 };
 
 export const exo_2 = () => {
     // please return the expected
-    return new Dog("GoodBoy")
 };
