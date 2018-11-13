@@ -26,7 +26,7 @@ describe("About Objects", function() {
       members: ["me", "others"],
       " tricky property ": 42
     };
-    expect(typeof JSONArray).toBe("Object");
+    expect(typeof JSONArray).toBe("object");
     expect(JSONArray[0]).toBe(1);
     expect(JSONArray[1]).toBe(2);
     expect(Array.isArray(JSONArray)).toBe(true);
