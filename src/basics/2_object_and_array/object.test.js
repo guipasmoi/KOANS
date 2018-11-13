@@ -1,112 +1,35 @@
 describe("About Objects", function() {
-  describe("Properties", function() {
-    var megalomaniac;
-
-    beforeEach(function() {
-      megalomaniac = { mastermind: "Joker", henchwoman: "Harley" };
-    });
-
-    it("should confirm objects are collections of properties", function() {
-      expect(megalomaniac.mastermind).toBe(FILL_ME_IN);
-    });
-
-    it("should confirm objects can be accessed by key name", function() {
-      const keyName = mastermind;
-      expect(megalomaniac[keyName]).toBe(FILL_ME_IN);
-    });
-
-    it("should confirm that properties are case sensitive", function() {
-      expect(megalomaniac.henchwoman).toBe(FILL_ME_IN);
-      expect(megalomaniac.henchWoman).toBe(FILL_ME_IN);
-    });
-  });
-
-  it("should know properties that are functions act like methods", function() {
-    var megalomaniac = {
-      mastermind: "Brain",
-      henchman: "Pinky",
-      battleCry: function(noOfBrains) {
-        return (
-          "They are " +
-          this.henchman +
-          " and the" +
-          Array(noOfBrains + 1).join(" " + this.mastermind)
-        );
-      }
+  it("Javascript Object (JSO) are an extension of JSON", () => {
+    var JSONExample = {
+      team: "burton",
+      members: ["me", "others"]
     };
-
-    var battleCry = megalomaniac.battleCry(4);
-    expect(FILL_ME_IN).toMatch(battleCry);
+    expect(typeof JSONExample).toBe("object");
   });
-
-  it("should confirm that when a function is attached to an object, 'this' refers to the object", function() {
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    var megalomaniac = {
-      mastermind: "James Wood",
-      henchman: "Adam West",
-      birthYear: 1970,
-      calculateAge: function() {
-        return currentYear - this.birthYear;
-      }
+  it("You can access/assign property using `.` or '[somevalue]'", () => {
+    const JSONExample = {
+      team: "burton",
+      members: ["me", "others"],
+      " tricky property ": 42
     };
-
-    expect(currentYear).toBe(FILL_ME_IN);
-    expect(megalomaniac.calculateAge()).toBe(FILL_ME_IN);
+    expect(JSONExample.team).toBe("burton");
+    expect(JSONExample.members[0]).toBe("me");
+    expect(JSONExample.members[1]).toBe("others");
+    expect(JSONExample.members[1]).toBe("others");
+    const assignMe0 = " tricky property ";
+    expect(JSONExample[assignMe0]).toBe(42);
   });
-
-  describe("'in' keyword", function() {
-    var megalomaniac;
-    beforeEach(function() {
-      megalomaniac = {
-        mastermind: "The Monarch",
-        henchwoman: "Dr Girlfriend",
-        theBomb: true
-      };
-    });
-
-    it("should have the bomb", function() {
-      var hasBomb = "theBomb" in megalomaniac;
-
-      expect(hasBomb).toBe(FILL_ME_IN);
-    });
-
-    it("should not have the detonator however", function() {
-      var hasDetonator = "theDetonator" in megalomaniac;
-
-      expect(hasDetonator).toBe(FILL_ME_IN);
-    });
-  });
-
-  it("should know that properties can be added and deleted", function() {
-    var megalomaniac = { mastermind: "Agent Smith", henchman: "Agent Smith" };
-
-    expect("secretary" in megalomaniac).toBe(FILL_ME_IN);
-
-    megalomaniac.secretary = "Agent Smith";
-    expect("secretary" in megalomaniac).toBe(FILL_ME_IN);
-
-    delete megalomaniac.henchman;
-    expect("henchman" in megalomaniac).toBe(FILL_ME_IN);
-  });
-
-  it("should use prototype to add to all objects", function() {
-    function Circle(radius) {
-      this.radius = radius;
-    }
-
-    var simpleCircle = new Circle(10);
-    var colouredCircle = new Circle(5);
-    colouredCircle.colour = "red";
-
-    expect(simpleCircle.colour).toBe(FILL_ME_IN);
-    expect(colouredCircle.colour).toBe(FILL_ME_IN);
-
-    Circle.prototype.describe = function() {
-      return "This circle has a radius of: " + this.radius;
+  it("Array are just special object", () => {
+    const JSONArray = [1, 2, 3, 4];
+    const JSONExample = {
+      team: "burton",
+      members: ["me", "others"],
+      " tricky property ": 42
     };
-
-    expect(simpleCircle.describe()).toBe(FILL_ME_IN);
-    expect(colouredCircle.describe()).toBe(FILL_ME_IN);
+    expect(typeof JSONArray).toBe("object");
+    expect(JSONArray[0]).toBe(1);
+    expect(JSONArray[1]).toBe(2);
+    expect(Array.isArray(JSONArray)).toBe(true);
+    expect(Array.isArray(JSONExample)).toBe(false);
   });
 });
